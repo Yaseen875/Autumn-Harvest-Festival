@@ -1,0 +1,112 @@
+body{
+    padding : 0;
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    background-color: hsla(25, 76%, 31%, 95%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    container-type: inline-size;
+    overflow: hidden;
+    z-index: 100;
+}
+.icon {
+    color: #d2691e;
+    flex-shrink: 1;
+    font-size: clamp(0rem, 5.7cqh, 10rem);
+    display: inline-flex;
+    margin-right: 5%;
+
+}
+.navlist {
+    list-style-type: none;
+    display: flex;
+    width: 90%;
+    height : 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.navelement{
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    color: #FFF8DC;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0rem, 2.3cqh, 5rem);
+    box-sizing: border-box;
+}
+.navelement:hover{
+    background-color: #d2691e;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition-duration: 0.15s;
+    transform-origin: center;
+}
+.icon:hover{
+    color: hsl(25, 75%, 57%);
+    cursor: pointer;
+    transform: scale(1.08);
+    transition-duration: 0.4s;
+    transform-origin: center;
+}
+.icon:not(:hover){
+        transform: scale(1);
+        transition-duration: 0.4s;
+        transform-origin: center;
+}
+.navelement:not(:hover){
+        transform: scale(1);
+        transition-duration: 0.15s;
+        transform-origin: center;
+}
+.home{
+    background-image: url(images/pum.jpg);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    position: sticky;
+    top: 0;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+.title{
+    color: hsl(36, 67%, 64%);
+    font-size: 3em;
+    position: sticky;
+    bottom: 60%;
+}
+.homelink{
+    text-decoration: none;
+    background-color: hsla(0, 100%, 27%, 80%);
+    color: #FFF8DC;
+    font-size: 3em;
+    position: absolute;
+    width: 15%;
+    text-align: center;
+    border-radius: 2vh;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.homelink:hover{
+    background-color: hsla(0, 100%, 27%, 100%);
+    transform: translateY(-3px) scale(1.05) rotate(1deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
